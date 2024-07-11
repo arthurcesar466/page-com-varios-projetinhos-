@@ -40,12 +40,11 @@ body * {
   padding: 0 24px;
 }
 
-
 /* profile */
 #profile {
   text-align: center;
   padding: 24px;
-  font-family: "inter",sans-serif;
+  font-family: "inter", sans-serif;
 }
 
 #profile img {
@@ -102,10 +101,10 @@ body * {
 }
 
 /* links */
-ul.links{
- list-style-type: none;
- text-align: center;
- margin: 6px;
+ul.links {
+  list-style-type: none;
+  text-align: center;
+  margin: 6px;
 }
 .git {
   position: relative;
@@ -115,7 +114,7 @@ ul.links{
   border-radius: 9px;
   background: var(--highlight-color);
   background-size: 400%;
-  color:var(--text-color);
+  color: white;
   border: none;
   cursor: pointer;
   font-size: 20px;
