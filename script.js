@@ -31,3 +31,12 @@ var menuSide = document.querySelector(".menu-lateral")
 btnExp.addEventListener("click", function () {
   menuSide.classList.toggle("expandir")
 })
+function togglemenu(){
+  const menumobile = document.getElementById("menu-mobile")
+  
+  if(menumobile.className === "menu-mobile-a"){
+    menumobile.className = "menu-mobile"
+  }else{
+    menumobile.className = "menu-mobile-a"
+  }
+}
