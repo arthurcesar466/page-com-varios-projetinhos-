@@ -3,54 +3,18 @@
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Baskervville+SC&family=Bebas+Neue&family=Outfit:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/2.4.2/uicons-solid-rounded/css/uicons-solid-rounded.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/2.4.2/uicons-regular-roundedcssuicons-regular-roundedcss"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/2.4.2/uicons-bold-straight/css/uicons-bold-straight.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/2.42uicons-regular-straightcssuicons-regular-straightcss"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/2.4.2/uicons-solid-straight/css/uicons-solid-straightcss"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/2.4.2/uicons-bold-rounded/css/uicons-bold-rounded.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/2.4.2/uicons-brands/css/uicons-brands.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/2.4.2/uicons-thin-straight/css/uicons-thin-straight.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/2.4.2/uicons-thin-rounded/css/uicons-thin-rounded.css"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
+  
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Baskervvill+SC&family=Bebas+Neue&family=Outfit:wght@100..900&display=swap" rel="stylesheet"/>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-bold-straight/css/uicons-bold-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-thin-straight/css/uicons-thin-straight.css'>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"rel="stylesheet"/>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -58,15 +22,54 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    
     <div id="container">
       <div id="profile">
-        <img
-          src="./assets/avatar dark.png"
-          alt="Foto de Mayk Brito sorrindo, usando óculos e camisa preta, barba e fundo amarelo.">
-    
+        <img src="./assets/avatar dark.png" alt="Foto de Mayk Brito sorrindo, usando óculos e camisa preta, barba e fundo amarelo.">
         <p>@arthur_frança</p>
       </div>
+        <nav class="menu-lateral">
 
+        <div class="btn-expandir">
+           <i class="fi fi-ss-menu-burger" id="btn-exp"></i>
+        </div><!--btn-expandir-->
+
+        <ul class="sidebar">
+            <li class="item-menu ativo">
+                <a href="#">
+                    <span class="icon"><i class="fi fi-ts-house-chimney"></i></span>
+                    <span class="txt-link">home</span>
+                </a>
+            </li>
+           <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="fi fi-tr-calculator"></i></span>
+                    <span class="txt-link">Calculadora</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="fi fi-tr-calendar-days"></i></span>
+                    <span class="txt-link">Agenda</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="fi fi-ts-gamepad"></i></span>
+                    <span class="txt-link">jogos</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="fi fi-rr-comment-alt"></i></span>
+                    <span class="txt-link">Feedback</span>
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+    
+     
       <div id="switch" onclick="toggleMode()">
         <button></button>
         <span></span>
@@ -118,7 +121,6 @@
         Feito com ♥ pela <a href="https://rocketseat.com.br/">Rocketseat</a>
       </footer>
     </div>
-
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
