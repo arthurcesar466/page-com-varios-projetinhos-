@@ -131,6 +131,7 @@ ul li.item-menu a .icon > i{
   color: var(--text-color);
   border: 2px solid rgb(133, 23, 236);
 }
+
 .menu-mobile{
   display: none;
 }
@@ -145,38 +146,40 @@ ul li.item-menu a .icon > i{
   flex-direction: column;
   transition: all 0.8s ease;
 }
-.menu-mobile-a button > span > i {
+.menu-mobile-a a{
+  text-decoration: none;
   display: inline-block;
-  margin: 70px;
-  border: 0;
-  color: white;
 }
-
 .menu-mobile-a button{
-  display: inline-block;
-  align-items: center;
-  background: rgba(255, 255, 255, 0.08);
-  border: 0;
-  border-radius: 22px;
-  color: #202020;
-  margin: 5px;
-  margin-left: 12px;
-
+    position:relative;
+    vertical-align: middle;
+    justify-content: center;
+    text-align: center;
+    background:rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    border: 0px;
+    text-decoration: none;
+    font-size: 55px;
+    display: inline-block;
+    width: 120px;
+    height: 70px;
+    margin: 30px;
 }
+
+
 .menu-mobile-a button > span{
   display: grid;
   font-size: 40px;
   line-height: 5px;
   border: 0;
-  
+
 }
 .mobile-text{
   font-size: 30px;
   font-family: 'bebas neue' , sans-serif;
   letter-spacing: 1px;
   line-height: 1vw;
-  margin: 2px;
-  border: 0;
+  border:0;
 }
 
 .button-mobile span{
@@ -184,9 +187,9 @@ ul li.item-menu a .icon > i{
   margin-left:8px;
   font-family: 'bebas neue';
 }
-.button-close span i {
+.button-close span > i {
   display: inline-block;
-  margin: 50px;
+  margin: 6px;
   font-size: 40px;
 }
 @media(max-width:480px){
