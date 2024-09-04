@@ -13,7 +13,7 @@
   --highlight-color: rgba(255, 255, 255, 0.2);
   --switch-bg-url: url(./assets/moon-4982930.svg);
   --menu-color: #531b79;
-  --mobile-bg-url: url(./assets/liquido.jpg);
+  --mobile-bg-url: url(./assets/download.jpeg);
 }
 
 .light {
@@ -34,6 +34,8 @@ body {
 
 body * {
   color: var(--text-color);
+  position: relative;
+  top:5px;
 }
 .border {
   border: 2px solid greenyellow;
@@ -118,8 +120,8 @@ ul li.item-menu a .icon > i {
 
 /* menu mobile */
 .button-mobile {
-  position: fixed;
-  bottom: 0;
+  position: absolute;
+  top: 824px;
   width: 100%;
   display: none;
   padding: 16px;
@@ -127,7 +129,7 @@ ul li.item-menu a .icon > i {
   align-items: center;
   align-self: flex-start;
   font-size: 20px;
-  background: rgba(105, 21, 173, 0.18);
+  background: rgba(114, 110, 117, 0.18);
   color: var(--text-color);
   border: 2px solid rgb(133, 23, 236);
 }
@@ -146,27 +148,31 @@ ul li.item-menu a .icon > i {
   flex-direction: column;
   transition: all 0.8s ease;
 }
+
 .menu-mobile-a a {
   text-decoration: none;
+  color: #400286;
   display: inline-block;
 }
 .menu-mobile-a button {
   position: relative;
+  left: 1px;
+  top: 150px;
   vertical-align: middle;
   justify-content: center;
   text-align: center;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgb(5, 5, 5);
   border-radius: 8px;
   border: 0px;
   text-decoration: none;
+  color: #400286;
   font-size: 55px;
   display: inline-block;
   width: 120px;
-  height: 70px;
-  margin: 30px;
+  height: 90px;
+  margin: 40px;
 }
-
-.menu-mobile-a button > span {
+.menu-mobile-a button > span  {
   display: grid;
   font-size: 40px;
   line-height: 5px;
@@ -174,19 +180,22 @@ ul li.item-menu a .icon > i {
 }
 .mobile-text {
   font-size: 30px;
+  color: white;
+  background-color:rgb(5, 5, 5, 0.8);
   font-family: "bebas neue", sans-serif;
   letter-spacing: 1px;
   line-height: 1vw;
   border: 0;
 }
-
 .button-mobile span {
   font-size: 24px;
   margin-left: 8px;
   font-family: "bebas neue";
 }
+
 .button-close span > i {
   display: inline-block;
+  color: #9e9da0;
   margin: 6px;
   font-size: 40px;
 }
