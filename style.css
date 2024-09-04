@@ -34,8 +34,6 @@ body {
 
 body * {
   color: var(--text-color);
-  position: relative;
-  top:5px;
 }
 .border {
   border: 2px solid greenyellow;
@@ -52,7 +50,7 @@ nav.menu-lateral {
   background-color: rgba(105, 21, 173, 0.18);
   padding: 40px 0 40px 1%;
   box-shadow: 3px 0 0 #400286;
-
+  cursor: pointer;
   position: fixed;
   top: 0;
   left: 0;
@@ -120,8 +118,8 @@ ul li.item-menu a .icon > i {
 
 /* menu mobile */
 .button-mobile {
-  position: absolute;
-  top: 824px;
+  position: fixed;
+  bottom: 0;
   width: 100%;
   display: none;
   padding: 16px;
@@ -151,7 +149,6 @@ ul li.item-menu a .icon > i {
 
 .menu-mobile-a a {
   text-decoration: none;
-  color: #400286;
   display: inline-block;
 }
 .menu-mobile-a button {
@@ -161,18 +158,21 @@ ul li.item-menu a .icon > i {
   vertical-align: middle;
   justify-content: center;
   text-align: center;
-  background: rgb(5, 5, 5);
+  background: rgb(5, 5, 5, 0.8);
   border-radius: 8px;
   border: 0px;
   text-decoration: none;
-  color: #400286;
   font-size: 55px;
   display: inline-block;
   width: 120px;
   height: 90px;
   margin: 40px;
 }
-.menu-mobile-a button > span  {
+.home-button{
+  color: #7029c0;
+  border:2px solid goldenrod;
+}
+.menu-mobile-a button > span {
   display: grid;
   font-size: 40px;
   line-height: 5px;
@@ -182,11 +182,13 @@ ul li.item-menu a .icon > i {
   font-size: 30px;
   color: white;
   background-color:rgb(5, 5, 5, 0.8);
+  border-radius: 6px;
   font-family: "bebas neue", sans-serif;
   letter-spacing: 1px;
   line-height: 1vw;
   border: 0;
 }
+
 .button-mobile span {
   font-size: 24px;
   margin-left: 8px;
